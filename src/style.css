@@ -5,5 +5,9 @@
 @layer base {
   html {
     font-family: "Roboto", system-ui, sans-serif;
+    font-size: 1em;
   }
+}
+body{
+  @apply bg-darkSlateGrey
 }
