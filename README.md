@@ -30,8 +30,7 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-
-![screencapture-fm-newsletter-form-netlify-app-2024-05-12-13_30_31](https://github.com/ninamicle/fem-newsletter-sign-up-form/assets/47386569/8b73b0e4-625b-43e5-bf89-7e118b10a3ae)
+![screencapture-fm-newsletter-form-netlify-app-2024-05-12-13_31_56](https://github.com/ninamicle/fem-newsletter-sign-up-form/assets/47386569/68543a53-b063-4d4b-8554-6b4c45c6fb19)
 ![screencapture-fm-newsletter-form-netlify-app-2024-05-12-13_29_39](https://github.com/ninamicle/fem-newsletter-sign-up-form/assets/47386569/976e3e40-19f0-4915-9cbd-529a39945ec1)
 ![screencapture-fm-newsletter-form-netlify-app-2024-05-12-13_29_58](https://github.com/ninamicle/fem-newsletter-sign-up-form/assets/47386569/58218c41-5435-4afe-b9c2-94a05110b24a)
 ![screencapture-fm-newsletter-form-netlify-app-2024-05-12-13_30_20](https://github.com/ninamicle/fem-newsletter-sign-up-form/assets/47386569/81911781-bb52-47b2-8912-8b9b4f00cf56)
