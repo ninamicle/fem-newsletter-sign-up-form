@@ -26,14 +26,12 @@
   <script setup>
     import Form from './Form.vue';
     import { onMounted, onUnmounted, ref } from 'vue';
-    import successIcon  from "/public/icon-success.svg";
+    import successIcon  from "../assets/icon-success.svg";
+    import desktopImg  from "../assets/illustration-sign-up-desktop.svg";
+    import mobileImg  from "../assets/illustration-sign-up-mobile.svg";
 
     defineProps(['contents']);
     const emits = defineEmits(['submitForm']);
-
-    const desktopImg = '/public/illustration-sign-up-desktop.svg';
-    const mobileImg = '/public/illustration-sign-up-mobile.svg';
-
     const imageUrl = ref('');
     const sendEmail = (data) => {
       emits('submitForm', data.value);
