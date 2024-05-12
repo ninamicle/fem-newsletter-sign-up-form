@@ -1,24 +1,39 @@
-<script setup>
-import {ref} from "vue";
-
-const email = ref("")
-const handleSubmit = ()=>{
-console.log(email.value);
-}
-</script>
-
 <template>
   <form @submit.prevent="handleSubmit" class="flex flex-col gap-y-4">
     <div class="flex flex-col">
-      <label class="font-bold py-2" for="email">Email address</label>
-      <input class="border border-grey rounded-lg h-12 placeholder:px-6"
+      <div class="flex justify-between font-bold py-2">
+        <label class="" for="email">Email address</label>
+        <div v-if="msg.validation" class="text-tomato">{{msg.validation}}</div>
+      </div>
+      <input class="border border-grey rounded-lg h-12 placeholder:px-6 hover:cursor-pointer  px-6"
+             :class="[msg.validation ? 'bg-red-200 border border-tomato text-tomato px-6': '']"
+             required
              v-model="email" type="email" id="email"
-             placeholder="email@company.com"/>
+             placeholder="email@company.com"
+             @blur="validateEmail"/>
     </div>
-    <button class="bg-darkSlateGrey text-white font-bold tracking-wide h-12 rounded-lg w-full" type="submit">Subscribe to monthly newsletter</button>
+    <Button :label="'Subscribe to monthly newsletter'" :type="'submit'"/>
   </form>
 </template>
 
-<style scoped>
+<script setup>
+import {ref} from "vue";
+import Button from "./Button.vue";
 
-</style>
+const emits = defineEmits(['submitForm']);
+const email = ref('');
+const msg = ref({validation: ""});
+const handleSubmit = (event)=>{
+  if(event)emits('submitForm', email)
+  email.value = '';
+  msg.value.validation = '';
+}
+const validateEmail =()=> {
+  const regex = /^[a-zA-Z0–9._-]+@[a-zA-Z0–9.-]+\.[a-zA-Z]{2,4}$/;
+  if (regex.test(email.value)){
+    msg.value.validation = '';
+  } else {
+    msg.value.validation = 'Valid email required';
+  }
+}
+</script>
