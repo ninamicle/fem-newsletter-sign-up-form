@@ -17,7 +17,7 @@
 </template>
 <script setup>
 import Button from "./Button.vue";
-import successIcon from "../../public/icon-success.svg";
+import successIcon from "../assets/icon-list.svg";
 
 defineProps(["email"])
 const emits = defineEmits(['submitForm', "backToForm"])
