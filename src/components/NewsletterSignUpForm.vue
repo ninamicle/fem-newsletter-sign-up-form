@@ -1,6 +1,6 @@
 <template>
   <div class="flex lg:my-32 md:my-32 justify-center items-center w-full">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 bg-white md:rounded-[1.9rem] lg:md:rounded-[1.9rem] lg:p-6 md:p-6">
+    <div class="grid grid-cols-1 md:gap-4 md:grid-cols-2 lg:grid-cols-2 bg-white md:rounded-[1.9rem] lg:rounded-[1.9rem] lg:p-6 md:p-6">
       <div class=" my-16 lg:order-1 md:order-1 order-2 lg:pl-10 md:pl-10 lg:pr-0 md:pr-0 px-6">
         <div class="flex flex-col pt-4 ">
           <h1 class="font-bold text-6xl text-darkSlateGrey pb-8 ">Stay updated!</h1>

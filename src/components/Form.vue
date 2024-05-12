@@ -5,7 +5,7 @@
         <label class="" for="email">Email address</label>
         <div v-if="msg.validation" class="text-tomato">{{msg.validation}}</div>
       </div>
-      <input class="border border-grey rounded-lg h-12 placeholder:px-6 hover:cursor-pointer  px-6"
+      <input class="border border-grey rounded-lg h-12 px-6 hover:cursor-pointer "
              :class="[msg.validation ? 'bg-red-200 border border-tomato text-tomato px-6': '']"
              required
              v-model="email" type="email" id="email"
